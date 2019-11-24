@@ -1,0 +1,89 @@
+<h1 id="ai-software-lab">AI Software Lab</h1>
+<h2 id="poject-prerequisites">Poject prerequisites</h2>
+<p>Tools required to install</p>
+<h3 id="system-requirements">System Requirements:</h3>
+<pre><code class="language-bash">minimum 4 GB Ram suggested 8GB ram
+Operating System Windows10 or above
+Internet Connection</code></pre>
+<h3 id="tools-requirments">Tools Requirments</h3>
+<hr>
+<p>Visual Studio Code (VS code) IDE to develop the code <a href="https://code.visualstudio.com/Download">click here</a></p>
+<p>GIT client <a href="https://git-scm.com/download/gui/windows">click here</a></p>
+<p><a href="https://github.com/AI-Software-Solutions">click here</a> for github </p>
+<p><a href="https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad?hl=en">click here</a> for gliffys</p>
+<p>notepad ++  <a href="https://notepad-plus-plus.org/downloads/v7.8.1/">click here</a></p>
+<h4 id="nodejs-132-current-version--click-here">Node.js 13.2 current version  <a href="https://nodejs.org/en/">click here</a></h4>
+<hr>
+<p>install VUE js with the help of npm </p>
+<pre><code class="language-bash">C:\Users\cpm\AI&gt;npm install --global vue-cli
+npm WARN deprecated vue-cli@2.9.6: This package has been deprecated in favour of @vue/cli
+npm WARN deprecated coffee-script@1.12.7: CoffeeScript on NPM has moved to &quot;coffeescript&quot; (no hyphen)
+C:\Users\cpm\AppData\Roaming\npm\vue-list -&gt; C:\Users\cpm\AppData\Roaming\npm\node_modules\vue-cli\bin\vue-list
+C:\Users\cpm\AppData\Roaming\npm\vue -&gt; C:\Users\cpm\AppData\Roaming\npm\node_modules\vue-cli\bin\vue
+C:\Users\cpm\AppData\Roaming\npm\vue-init -&gt; C:\Users\cpm\AppData\Roaming\npm\node_modules\vue-cli\bin\vue-init
++ vue-cli@2.9.6
+updated 1 package in 246.719s</code></pre>
+<h4 id="how-to-create-project-structure-usng-vue-cli">How to create Project structure usng VUE CLI</h4>
+<pre><code class="language-bash">vue init webpack AILAB
+
+? Project name ailab
+? Project description A Vue.js project
+? Author PurushothamCheekuru &lt;cheekuru.cvshp@gmail.com&gt;
+? Vue build standalone
+? Install vue-router? Yes
+? Use ESLint to lint your code? Yes
+? Pick an ESLint preset Standard
+? Set up unit tests No
+? Setup e2e tests with Nightwatch? Yes
+? Should we run `npm install` for you after the project has been created? (recommended) npm
+
+   vue-cli · Generated &quot;AILAB&quot;.</code></pre>
+<h4 id="how-to-run-vue-application">How to run VUE application</h4>
+<pre><code class="language-bash">
+C:\Users\cpm\AI&gt;cd AILAB
+
+C:\Users\cpm\AI\AILAB&gt;npm run dev
+</code></pre>
+<h4 id="github-url--source-code-manager">github url -source code manager</h4>
+<hr>
+<h3 id="how-to-generate-readmemd-file-for-the-project">How to generate README.md file for the project</h3>
+<ol>
+<li>First install the marked markdown converter:</li>
+</ol>
+<p>$ npm install --save-dev marked</p>
+<ol start="2">
+<li>Then in a new file called generateReadMe.js, compile the markdown to HTML and write it to a new README.html file:<pre><code class="language-bash">var marked = require(&#39;marked&#39;);
+var fs = require(&#39;fs&#39;);
+var readMe = fs.readFileSync(&#39;README.md&#39;, &#39;utf-8&#39;);
+var markdownReadMe = marked(readMe);
+fs.writeFileSync(&#39;./site/README.html&#39;, markdownReadMe);</code></pre>
+</li>
+<li>Then inside the index.html where the README.md content is wanted, add an <object> tag<pre><code class="language-bash">&lt;object data=&quot;README.html&quot; type=&quot;text/html&quot;&gt;&lt;/object&gt;</code></pre>
+</li>
+<li>Then run this on the command line to make it happen:<pre><code class="language-bash">$ node path/to/generateReadMe.js</code></pre>
+</li>
+</ol>
+<hr>
+<h2 id="ailab">AILAB</h2>
+<blockquote>
+<p>A Vue.js project</p>
+</blockquote>
+<h3 id="build-setup">Build Setup</h3>
+<pre><code class="language-bash"># install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test</code></pre>
+<p>For a detailed explanation on how things work, check out the <a href="http://vuejs-templates.github.io/webpack/">guide</a> and <a href="http://vuejs.github.io/vue-loader">docs for vue-loader</a>.</p>
