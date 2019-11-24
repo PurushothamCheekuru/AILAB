@@ -1,6 +1,6 @@
 # AI Software Lab
 
-## Poject prerequisites
+## Project pre-requisites
 
 Tools required to install
 
